@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_toStartOf="@+id/relativeView"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/relativeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@android:color/darker_gray"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_guess_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeView"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/user_guess"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/user_guess_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeView"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/com_number_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextDark"
+        android:text="@string/com_number"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/com_number_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/total_guess_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/com_number_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextDark"
+        android:text="@string/total_guess"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/total_guess_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/com_number_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/high_guess_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextDark"
+        android:text="@string/high_guess"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/high_guess_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/low_guess_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/high_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextDark"
+        android:text="@string/low_guess"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/low_guess_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/high_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/superior_win_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/low_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextDark"
+        android:text="@string/superior_win"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/superior_win_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/low_guess_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/excellent_win_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/superior_win_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextDark"
+        android:text="@string/excellent_win"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/excellent_win_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/superior_win_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/lose_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/excellent_win_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextDark"
+        android:text="@string/lose"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/lose_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/excellent_win_view"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/colorTextLight"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorTextLight"
+        android:textSize="25sp" />
+
+</RelativeLayout>

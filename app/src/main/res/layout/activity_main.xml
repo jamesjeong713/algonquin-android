@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_toStartOf="@+id/relativeView"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/relativeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@android:color/darker_gray"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/relativeView"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/guess"
+        android:text="Hello World!" />
+
+    <TextView
+        android:id="@+id/guess_what"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeView"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@android:color/darker_gray"
+        android:text="@string/guess"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/guess_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess_edit"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:text="@string/guess_button"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/guess_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/photoImageView"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/edit_name"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/guess_button"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/reset" />
+
+    <TextView
+        android:id="@+id/user_guess_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess_what"
+        android:text="1 ~ 1000"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count" />
+
+    <TextView
+        android:id="@+id/count_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/guess_button"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/about" />
+
+</RelativeLayout>
+    <!--android:layout_alignParentStart="false"-->
+    <!--android:layout_alignParentLeft="false"-->
+    <!--android:layout_alignParentTop="false"-->
+    <!--android:layout_alignParentEnd="false"-->
+    <!--android:layout_alignParentRight="true"-->

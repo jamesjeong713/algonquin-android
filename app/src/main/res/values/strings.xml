@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HiLo!</string>
+    <string name="guess">Guess What?</string>
+    <string name="edit_name">Enter your guess number.</string>
+    <string name="guess_button">Guess</string>
+    <string name="reset">Reset</string>
+    <string name="count">Count: </string>
+    <string name="result">Result</string>
+    <string name="total_guess">Total guess: </string>
+    <string name="high_guess">High guess: </string>
+    <string name="low_guess">Low guess: </string>
+    <string name="superior_win">Superior Wins: </string>
+    <string name="excellent_win">Excellent Wins: </string>
+    <string name="lose">Loses: </string>
+    <string name="user_guess">User guess: </string>
+    <string name="com_number">com_number: </string>
+    <string name="about">About</string>
+</resources>
